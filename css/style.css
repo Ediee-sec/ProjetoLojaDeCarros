@@ -1,0 +1,967 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+header {
+  padding: 50px 2%;
+  height: 151px;
+}
+
+.container-center{
+	width: 100%;
+	max-width: 1800px;
+	margin: 0 auto;
+}
+
+.logo-header{
+	float: left;
+}
+
+/*MENU PARA COMPUTADOR*/
+.menu-desktop-header-footer{
+	float: right;
+}
+
+.menu-desktop-header-footer ul{
+	list-style-type: none;
+}
+
+.menu-desktop-header-footer li{
+	padding: 20px 30px;
+	float: left;
+}
+
+.menu-desktop-header-footer a{
+	color: black;
+	font-style: italic;
+	font-size: 25px;
+}
+
+/*****/
+
+/*MENU PARA CELULARES/TABLETS*/
+.menu-mobile-header{
+	display: none;
+	float: right;
+	background-image: url('../imagens/open-menu.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.menu-mobile-header ul {
+	position: absolute;
+	top:150px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	background-color: white; 
+	z-index: 999;
+}
+
+.menu-mobile-header li{
+	padding: 10px 0px;
+}
+
+.menu-mobile-header a{
+	color: black;
+	font-style: italic;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+/*****/
+
+/*COMEÇANDO A SESSÃO BACKGROUND PRINCIPAL*/
+.container-background{
+	width: 100%;
+	height: calc(100vh - 151px);
+	background-color: black;
+	background-image: url('../imagens/bg-car.png');
+	background-size: contain;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	overflow-y: hidden;
+}
+
+.box-text-bg{
+	width: 100%;
+	max-width: 400px;
+	transform:translateY(100%);
+	padding-left: 100px;
+}
+
+.box-geral{
+	background-size: cover;
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	margin: 10px 0;
+	text-align: center;
+}
+
+.box-text-bg .box-geral:nth-of-type(1){
+	width: 314px;
+	margin-left: 39px;
+}
+
+.box-text-bg .box-geral:nth-of-type(2){
+	width: 221px;
+	margin-left: 26px;
+}
+
+.box-text-bg .box-geral:nth-of-type(3){
+	width: 190px;
+	margin-left: 13px;
+}
+
+.box-geral p{
+	font-size: 40px;
+	color: white;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+.b-text4{
+	width: 487px;
+	padding: 0 2%;
+}
+
+.b-text4 p{
+	color: black;
+	font-size: 25px;
+}
+
+/*****/
+
+/*COMEÇANDO SESSÃO DE VEICULOS EM DESTAQUE*/
+.container-featured-vehicles .container-center{
+	max-width: 1000px;
+	padding: 50px 0;
+	text-align: center;
+}
+
+.container-center .ln1, .ln2{
+	width: 30%;
+	height: 2px;
+	background-color: black;
+	display: inline-block;
+	position: relative;
+	bottom: 10px;
+}
+
+.container-center .text {
+	font-size: 20px;
+	padding: 0 3%;
+	color: black;
+	text-transform: uppercase;
+	font-style: italic;
+	display: inline-block;
+}
+
+.cars-waraper{
+	width: calc(100% / 3);
+	float: left;
+	padding: 40px 10px;
+	text-align: left;
+}
+
+.cars-info{
+	text-align: left;
+	font-style: italic;
+}
+
+.cars-info h2 {
+	font-size: 20px;
+}
+
+
+.cars-info p{
+	padding-top: 10px;
+	color: #353535;
+}
+
+.btn1 {
+	width: 153px;
+	height: 49px;
+	background-color: #EB2D2D;
+	border-bottom: 3px solid #ff6858;
+	font-size:24px;
+	padding: 15px 30px;
+	color: white;
+	text-decoration: none;
+	line-height: 90px;
+	
+}
+
+.cars-img{
+	width: 100%;
+	padding-top: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*****/
+
+/*COMEÇANDO SESSÃO DE SERVICOS E DEP HOME*/
+.container-servs-depoiment{
+	margin-top: 50px;
+	display: flex;
+}
+
+.servs-half1{
+	width: 50%;
+	background-color: #242424;
+}
+
+.container-servs-depoiment  .container-center{
+	max-width: 700px;
+}
+
+.servs-half1 h2{
+	margin-top: 70px;
+	padding: 20px 2%;
+	font-size: 35px;
+	font-weight: bold;
+	font-style: italic;
+	letter-spacing: 4px;
+	color: white;
+}
+
+.servs-half1 ul{
+	padding: 20px;
+	margin-left: 40px;
+	display: inline-block;
+}
+
+.servs-half1 li{
+	font-size: 24px;
+	font-style: italic;
+	font-weight: normal;
+	color: white;
+	padding:8px 0;
+
+}
+
+.servs-half1 a{
+	vertical-align: bottom;
+	margin-left: 80px;
+	position: relative;
+	bottom: 15px;
+}
+
+.depoiment-half2{
+	width: 50%;
+	background-color: #EB2D2D;
+}
+
+.depoiment-half2 h2{
+	margin-top: 70px;
+	padding: 20px 2%;
+	font-size: 45px;
+	font-weight: bold;
+	font-style: italic;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color: white;
+}
+
+.depoiment-half2 p{
+	max-width: 600px;
+	display: inline-block;
+	color: white;
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: normal;
+	padding: 20px;
+	margin-left: 20px;
+	text-align: left;
+
+}
+
+.navegation{
+	padding: 50px 3%;
+	text-align: center;
+}
+
+.arrows{
+	padding: 30px 0;
+	float: left;
+	cursor: pointer;
+}
+
+.arrows img:nth-of-type(1) {
+	padding-right: 60px;
+}
+
+.name-dp {
+	float: right;
+}
+
+.name-dp p{
+	color: black;
+	font-style: italic;
+	font-weight: normal;
+ 	font-size: 24px;
+ 	position: relative;
+ 	right: 30px;
+}
+
+/*****/
+
+/*COMEÇANDO SESSÃO DE CONTATO NA HOME*/
+section.container-contact > .container-center{
+	max-width: 1000px;
+	padding: 50px 0;
+	text-align: center;
+}
+
+.container-contact  form{
+	max-width: 910px;
+	padding: 60px 0;
+	margin: 0 auto;
+}
+
+.container-contact .input-wraper{
+	float: left;
+	padding: 10px;
+}
+
+.container-contact input[type=text], textarea{
+	width: 100%;
+	height: 58px;
+	line-height: 35px;
+	border: 2px solid #ccc;
+	padding-left: 20px;
+	color: #ccc;
+	font-size: 30px;
+	font-style: italic;
+	outline: none;
+}
+
+.container-contact textarea{
+	height: 200px;
+	resize: none;
+	padding-top: 15px;
+}
+
+.container-contact input[type=submit]{
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	line-height: 0;
+	cursor: pointer;
+	outline: none;
+}
+
+.container-contact .w100{
+	width: 100%;
+}
+
+.container-contact .w50{
+	width: 50%;
+}
+
+/*****/
+
+/*COMEÇANDO O RODAPÉ*/
+footer{
+	background-color: #252525;
+	padding: 20px 90px;
+}
+
+footer > .menu-desktop-header-footer{
+	float: left;
+}
+
+footer > .menu-desktop-header-footer a{
+	color: white;
+}
+
+.footer-text{
+	float: right;
+}
+
+.footer-text p{
+	display: inline-block;
+	color: white;
+	font-style: italic;
+	font-size: 22px;
+	padding: 0 20px;
+}
+
+.footer-text span{
+	color: #EB2D2D;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 26px;
+
+}
+
+/*****/
+
+/*INICIANDO O ESTILO DA PAGINA DE VENDAS*/
+.container-seller{
+	min-height: 100%;
+}
+
+.container-seller .container-center, .line {
+	width: 100%;
+	padding: 50px 0;
+	text-align: center;
+}
+
+.sub-cont-seller{
+	display: flex;
+}
+
+/*COMEÇANDO SIDER BAR DE PESQUISA PAG VENDAS*/
+aside{
+	width: 30%;
+	max-width: 300px;
+	margin-top: 50px;
+	border-collapse: collapse;
+
+}
+
+.price-filter{
+	width: 100%;
+	height: 18px;
+	margin-top: 15px;
+	background-color: white;
+	border: 1px solid #9b9b9b;
+	border-radius: 18px;
+	position: relative;
+	box-sizing: content-box;
+	display: inline-block;
+}
+
+.select-fill{
+	width: 30%;
+	height: 18px;
+	position: absolute;
+	background-color: #ccc;
+	top: 0;
+	left: 1px;
+	opacity: 0.5;
+	border-radius: 15px;
+}
+
+.pointer-fill{
+	width: 18px;
+	height: 24px;
+	border: 1px solid #696969;
+	border-radius: 5px;
+	background-color: #ccc;
+	position: absolute;
+	top: -3px;
+	left: calc(30% - 9px);
+	cursor: pointer;
+}
+
+.search-bar span{
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 30px;
+	text-align: left;
+}
+
+.search-bar span:nth-of-type(1){
+	float: left;
+	
+}
+
+.search-bar span:nth-of-type(2){
+	float: right;
+	
+}
+
+.filter-year{
+	margin-top:50px;
+	text-align: left;
+}
+
+.filter-year form{
+	margin-top: 20px;
+}	
+
+.filter-year input {
+	display: none;
+}
+
+.filter-year label {
+	width: 16px;
+	height: 16px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+}
+
+.filter-year  .circle{
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	background-color: black;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	display: none;
+}
+
+.filter-year input[type=checkbox]:checked + label > .circle{
+	display: inline-block;
+} 
+
+.filter-year span{
+	margin-left: 10px;
+}
+
+/*****/
+
+/*COMEÇANDO DETALHES DE CARROS PAGINA DE VENDAS*/
+.detail-cars{
+	width: 70%;
+	padding-top: 30px 2%;
+	margin-left: 90px;
+}
+
+/*****/
+
+/*COMEÇANDO PAGINA DE VENDAS/COMPRA ÚNICA*/
+.seller-single {
+	width: 100%;
+	padding: 100px 0;
+}
+
+.seller-single .container-center{
+	max-width: 1280px;
+}
+
+.seller-single .line{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.flex{
+	display: flex;
+	padding: 50px 3%;
+}
+
+.img-principal {
+	width: 70%;
+	padding-top: 45%;
+	background-position: top;
+	background-size:100%;
+	background-repeat: no-repeat;
+}
+
+.info-description{
+	width: 30%;
+	padding-left: 30px;
+}
+
+.info-description h2{
+	font-size: 30px;
+	font-style: italic;
+}
+
+.info-description p{
+	font-size: 17px;
+	font-style: italic;
+	margin-top: 25px;
+}
+
+.info-description a{
+	margin-top: 25px;
+}
+
+.nav-gallery{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	bottom: 50px;
+}
+
+.img-slide-wraper{
+	width: 200%;
+}
+
+.img-slide{
+	width: calc(100% * (100 / 200) * 0.33);
+	padding-top: calc(100% * (100 / 200) * 0.2);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: left;
+	border-left: 7px solid white;
+	cursor: pointer;
+}
+
+/*****/
+
+/*COMEÇANDO A PAGINA SOBRE*/
+.about-us{
+	min-height: 100%;
+}
+
+.img-top{
+	width: 100%;
+	max-width: 838px;
+	margin: 0 auto;
+	padding-top: 25%;
+	background-image: url('../imagens/img-sobre/oficina.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.description-one {
+	padding: 30px 0;
+	width: 100%;
+	max-width:838px;
+	margin: 0 auto;
+}
+
+.description-one h2{
+	font-size: 40px;
+	font-style: italic;
+	color: gray;
+}
+
+.description-one p{
+	padding-top: 30px;
+	font-size: 28px;
+	font-style: italic;
+	line-height: 42px;
+	color: gray;
+}
+
+.img-description-two{
+	width: 100%;
+	max-width: 838px;
+	margin:0 auto;
+	padding: 90px 0;
+	display: flex;
+}
+
+.img-description-two .img-persona{
+	width: 40%;
+	padding-top: 40%;
+	background-image: url('../imagens/img-sobre/persona.jpg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.description-two{
+	width: 60%;
+	max-width: 450px;
+	padding-left: 50px;
+}
+
+.description-two p{
+	padding-top: 30px;
+	font-size: 23px;
+	font-style: italic;
+	line-height: 35px;
+	color: gray; 
+}
+
+/*****/
+/*RESPOSIVO*/
+@media screen and (max-width: 1453px){
+	footer{
+		padding: 20px 90px;
+		text-align: center;
+	}
+
+	footer > .menu-desktop-header-footer{
+		float: none;
+		display: inline-block;
+	}
+
+	.footer-text{
+		float: none;
+		display: inline-block;
+	}
+}
+@media screen and (max-width: 1208px){
+	.servs-half1 ul{
+		padding: 20px;
+		margin-left: 40px;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 1029px){
+	 .menu-desktop-header-footer{
+		float: right;
+	}
+
+	.menu-desktop-header-footer li{
+		padding: 20px 10px;
+	}
+
+	.container-servs-depoiment{
+		margin-top: 50px;
+		display: flex;
+		text-align: center;
+	}
+
+	.servs-half1 li{
+		font-size: 22px;
+		text-align: left;
+
+	}
+
+	.servs-half1 a{
+		margin-left: 0px;
+		margin-top: 50px;
+	}
+
+	.arrows img:nth-of-type(1) {
+		padding-right: 20px;
+	}
+
+	.sub-cont-seller{
+		display: flex;
+		flex-direction: column;
+	}
+
+	aside{
+		width: 100%;
+		margin: 50px auto;
+		max-width: 300px;
+		margin-top: 0px;
+		border-collapse: collapse;
+
+	}
+
+	.detail-cars{
+		width: 100%;
+		padding-top: 30px 2%;
+		margin-left: 0px;
+	}
+
+
+}
+
+
+@media screen and (max-width: 830px){
+	.container-center .ln1, .ln2{
+		width: 100%;
+		position: static;
+		bottom: 0px;
+	}
+
+	footer{
+		padding: 20px 0;
+	}
+
+	/*RESPONSIVO PAG. SOBRE*/
+	.img-top{
+		width: 100%;
+		max-width: 838px;
+		padding-top: 50%;
+		border: 9px solid white;
+
+	}
+
+	.description-one {
+		padding: 30px 5%;
+		text-align: center;
+
+	}
+
+	.description-one h2{
+		font-size: 32px;
+	}
+
+	.description-one p{
+		padding-top: 30px;
+		font-size: 20px;
+		text-align: justify;
+	}
+
+	.img-description-two{
+		padding-top: 40px;
+		display: inline-block;
+	}
+
+	.img-description-two .img-persona{
+		width: 80%;
+		padding-top: 80%;
+		margin: 0 auto
+	}
+
+	.description-two{
+		width: 100%;
+		margin: 0 auto;
+		padding-left: 0px;
+	}
+
+	.description-two p{
+		padding-top: 0px;
+		font-size: 20px;
+		position: relative;
+		bottom: 52px;
+	}
+	/*****/
+
+}
+
+@media screen and (max-width: 779px){
+	header {
+		height: 100px;
+		padding: 20px 2%;
+	}
+
+	.logo-header img{
+		width: 150px;
+	}
+
+	.container-background{
+		width: 100%;
+		height: calc(100vh - 100px);
+	}
+	.menu-desktop-header-footer{
+		display: none;
+	}
+
+	.menu-mobile-header{
+		display: none;
+	}
+
+	.box-text-bg{
+		width: 100%;
+		max-width: 400px;
+		transform:translateY(30%);
+		padding-left: 10vw;
+	}
+
+	.box-geral p{
+		font-size: 23px;
+	}
+
+	.b-text4{
+		width: 300px;
+		padding: 0 2%;
+	}
+
+	.b-text4 p{
+		color: black;
+		font-size: 13px;
+	}
+
+	.cars-waraper{
+		width: 80%;
+		float: none;
+		display: inline-block;
+		padding: 50px 0px;
+	}
+
+	.cars-info{
+		text-align: center;
+		position: relative;
+		bottom: 29px;
+	}
+
+	.cars-img{
+		width: 100%;
+		padding-top: 100%;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.container-servs-depoiment{
+		flex-direction: column;
+	}
+
+	.servs-half1{
+		width: 100%;
+	}
+
+	.servs-half1 ul{
+		padding-bottom: 50px;
+	}
+
+	.servs-half1 li{
+		width: 260px;
+		margin: 0 auto;
+		font-size: 22px;
+		text-align: left;
+	}
+
+	.depoiment-half2{
+		width: 100%;
+	}
+
+	.depoiment-half2 h2{
+		font-size: 35px;
+		letter-spacing: 3px;
+	}
+
+	.depoiment-half2 p{
+		font-size: 25px;
+	}
+
+	.arrows img:nth-of-type(1) {
+		padding-right: 60px;
+
+	}
+
+	.container-contact .w50{
+		width: 100%;
+	}
+
+	.container-contact  form{
+	max-width: 600px;
+	padding: 30px 3%;
+
+	}
+
+	footer >  .menu-desktop-header-footer{
+		display: none;
+	}
+
+}
+
+
+@media screen and (max-width: 550px){
+	.footer-text p{
+		font-size: 18px;
+		padding: 0 20px;
+	}
+
+	.footer-text span{
+		font-size: 24px;
+
+	}
+}
+
+
+
+
+
+
+/*****/ 
+
+
+
